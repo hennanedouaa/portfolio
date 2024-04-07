@@ -60,6 +60,8 @@
       margin-right: 20px; /* Adjust spacing between icons */
       margin-bottom: 10px; /* Adjust spacing between rows */
       float: left;
+      color: hsl(45, 100%, 72%);/* Custom color for all icons */
+
 
     }
 
@@ -67,8 +69,30 @@
       font-size: 24px; /* Adjust icon size */
       margin-right: 8px; /* Adjust spacing between icon and text */
       float: left;
+      color:hsl(45, 100%, 72%); /* Custom color for all icons */
+
 
     }
+    .tech-stack-content {
+      display: none; /* Hide tech stack content by default */
+    }
+    .download-cv-btn {
+  background-color: hsla(116, 51%, 83%, 0.7);; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin-top: 20px; /* Add space above the timeline section */
+  margin-left: 7%;
+}
+
+.download-cv-btn:hover {
+  background-color: hsl(45, 100%, 72%); 
+}
+
 
   </style>
 </head>
@@ -106,6 +130,29 @@
         </button>
 
       </div>
+      <div class="separator"></div>
+
+      <ul class="social-list">
+
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/douaa-hennane-5b94a421a" class="social-link" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://github.com/hennanedouaa" class="social-link" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://www.instagram.com/dou._.aa7/?next=%2F" class="social-link" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
 
       <div class="sidebar-info_more">
 
@@ -171,29 +218,7 @@
 
         </ul>
 
-        <div class="separator"></div>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/douaa-hennane-5b94a421a" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/hennanedouaa" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/dou._.aa7/?next=%2F" class="social-link" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
 
       </div>
 
@@ -219,6 +244,9 @@
 
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Resume</button>
           </li>
 
 
@@ -343,6 +371,7 @@
 
         </section>
       </section>
+
       <section class="skill">
 
         <h3 class="h3 skills-title">My skills</h3>
@@ -350,69 +379,96 @@
         <ul class="skills-list content-card">
 
           <li class="skills-item">
-            <div class="title-wrapper">
+            <div class="title-wrapper" style="width: 200px;"> <!-- Adjust width as needed -->
               <h5 class="h5">Front end</h5>
               <data value="80">80%</data>
               <a href="#" class="toggle-tech-stack" data-target="front-end-stack">Tech Stack</a>
             </div>
             <div class="skill-progress-bg">
-              <div class="skill-progress-fill"></div>
+              <div class="skill-progress-fill" style="width: 80%;"></div>
             </div>
-            <div class="tech-stack-content" id="front-end-stack">
+            <div class="tech-stack-content hidden" id="front-end-stack">
               <ul>
                 <li><i class="fab fa-html5"></i><span>HTML</span></li>
                 <li><i class="fab fa-css3-alt"></i><span>CSS</span></li>
                 <li><i class="fab fa-js"></i><span>JavaScript</span></li>
                 <li><i class="fab fa-react"></i><span>React</span></li>
                 <li><i class="fab fa-angular"></i><span>Angular</span></li>
-                <li><i class="fab fa-tailwind"></i><span>Tailwind CSS</span></li>
+                <li><i class="fab fa-tailwind icon"></i><span>Tailwind CSS</span></li>
                 <li><i class="fab fa-js"></i><span>Three.js</span></li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="skills-item">
+
+            <div class="title-wrapper" style="width: 200px;"> <!-- Adjust width as needed -->
+              <h5 class="h5">Back end</h5>
+              <data value="60">60%</data>
+              <a href="#" class="toggle-tech-stack" data-target="back-end-stack">Tech Stack</a>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 60%;"></div>
+            </div>
+            <div class="tech-stack-content hidden" id="back-end-stack">
+              <ul>
+                <li><i class="fas fa-flask"></i><span>Flask</span></li>
+                <li><i class="fab fa-python"></i><span>Python</span></li>
+                <li><i class="fab fa-node"></i><span>Node.js</span></li>
+                <li><i class="fas fa-database"></i><span>MySQL</span></li>
+                <li><i class="fab fa-python"></i><span>Django</span></li>
+              </ul>
+            </div>
+
+
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper" style="width: 400px;"> <!-- Adjust width as needed -->
+              <h5 class="h5">Mobile Development </h5>
+              <data value="80">80%</data>
+              <a href="#" class="toggle-tech-stack" data-target="mob-stack">Tech Stack</a>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+            <div class="tech-stack-content hidden" id="mob-stack">
+              <ul>
+                <li><i class="fas fa-fire"></i><span>Firebase</span></li>
+                <li><i class="fab fa-react"></i><span>React Native</span></li>
+                <li><i class="fab fa-java"></i><span>Java</span></li>
+                <li><i class="fab fa-python"></i><span>Python</span></li>
+                <li><i class="fab fa-flutter"></i><span>Flutter</span></li>
               </ul>
             </div>
           </li>
 
           <li class="skills-item">
 
-            <div class="title-wrapper">
-              <h5 class="h5">Backend</h5>
-              <data value="60">60%</data>
-            </div>
-
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
-            </div>
-
-          </li>
-
-          <li class="skills-item">
-
-            <div class="title-wrapper">
-              <h5 class="h5">Mobile Developmen </h5>
-              <data value="70">70%</data>
-            </div>
-
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 90%;"></div>
-            </div>
-
-          </li>
-
-          <li class="skills-item">
-
-            <div class="title-wrapper">
+            <div class="title-wrapper" style="width: 500px;"> <!-- Adjust width as needed -->
               <h5 class="h5">Design</h5>
               <data value="70">70%</data>
+              <a href="#" class="toggle-tech-stack" data-target="design-stack">Tech Stack</a>
             </div>
-
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 50%;"></div>
+             <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
             </div>
-
+            <div class="tech-stack-content hidden" id="design-stack">
+              <ul>
+                <li><i class="fab fa-figma"></i><span>Figma</span></li>
+                <li><i class="fab fa-illustrator"></i><span>Adobe Illustrator</span></li>
+                <li><i class="fab fa-photoshop"></i><span>Adobe Photoshop</span></li>
+              </ul>
+            </div>
           </li>
           <li class="skills-item">
 
-            <div class="title-wrapper">
-              <h5 class="h5">Project Managment </h5>
+            <div class="title-wrapper" style="width: 500px;"> 
+                            <h5 class="h5">Project Managment </h5>
               <data value="50">50%</data>
             </div>
 
@@ -425,6 +481,18 @@
         </ul>
 
       </section>
+    </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+
+        </header>
 
         <section class="timeline">
 
@@ -520,6 +588,7 @@
             </li>
 
           </ol>
+          <button class="download-cv-btn">Download CV</button>
 
 
       </article>
