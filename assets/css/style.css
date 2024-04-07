@@ -24,15 +24,16 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    to bottom right,
+    hsl(128, 5%, 33%) 3%,
     hsl(0, 0%, 19%) 97%
   );
+  
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    to bottom right,
+    hsla(150, 20%, 10%, 0.25) 0%,
+    hsla(150, 20%, 10%, 0) 100%
+  ), hsl(150, 20%, 10%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
@@ -40,7 +41,7 @@
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(117, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -56,17 +57,17 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --jet: hsl(160, 10%, 15%);            /* Dark greenish color */
+  --onyx: hsl(120, 5%, 20%);            /* Dark greenish tone */
+  --eerie-black-1: hsl(120, 5%, 15%);   /* Deeper dark greenish */
+  --eerie-black-2: hsl(120, 5%, 12%);   /* Very deep dark greenish */
+  --smoky-black: hsl(120, 5%, 7%);      /* Extremely deep dark greenish */
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray-70: hsla(116, 51%, 83%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -1879,4 +1880,45 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+/* Tech Stack Section Styles */
+.tech-stack {
+  margin-top: 40px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.icon-box ion-icon {
+  font-size: 24px;
+}
+
+.category-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tech-icons img {
+  width: 50px; /* Adjust size based on your preference */
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Henanne Douaa El-Ikhlas</title>
 
   <!--
     - favicon
@@ -23,6 +23,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--
+    - for the icons
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add click event listener to toggle-tech-stack links
+      $('.toggle-tech-stack').click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        var target = $(this).data('target'); // Get the target ID from data-target attribute
+        $('#' + target).slideToggle(); // Toggle visibility of tech stack content
+      });
+    });
+  </script>
+  <style>
+        /* Custom style for the "Tech Stack" link */
+        .toggle-tech-stack {
+      font-size: 12px; /* Adjust font size for the link */
+      color: #b0bec5; /* Use the defined light-gray-70 color */
+      text-decoration: underline;
+      margin-left: 10px; /* Adjust spacing from the skill title */
+    }
+  </style>
 </head>
 
 <body>
@@ -46,9 +69,9 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Richard hanrick">Douaa Hennane</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Computer Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +97,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:richard@example.com" class="contact-link">ld_hennane@esi.dz</a>
             </div>
 
           </li>
@@ -88,7 +111,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+12133522795" class="contact-link">+(213) 793835494</a>
             </div>
 
           </li>
@@ -102,7 +125,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23">July 23, 2004</time>
             </div>
 
           </li>
@@ -116,7 +139,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>KHEMIS MILLIANA, Ain Defla, Algeria</address>
             </div>
 
           </li>
@@ -128,19 +151,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/douaa-hennane-5b94a421a" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://github.com/hennanedouaa" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/dou._.aa7/?next=%2F" class="social-link" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -173,9 +196,6 @@
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
@@ -209,18 +229,14 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am a Computer Science student at the Higher National School of Computer Science in Algiers,
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            As a Creative Developer and UI/UX Designer from Algeria, currently in web development , I enjoy turning complex problems into simple, beautiful and intuitive solutions and designs.   
+            I am also enthusiastic about network engineering and cybersecurity, exploring opportunities to expand my skills in these areas. I am eager to contribute my knowledge and dedication to innovative projects that challenge and inspire growth.
           </p>
+
         </section>
 
 
@@ -230,7 +246,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">My Services</h3>
 
           <ul class="service-list">
 
@@ -242,11 +258,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">UI/UX</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+                  Crafting intuitive and visually engaging user interfaces with a focus on seamless user experience                 </p>
               </div>
 
             </li>
@@ -261,7 +276,7 @@
                 <h4 class="h4 service-item-title">Web development</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Delivering high-quality website development at a junior professional level.
                 </p>
               </div>
 
@@ -277,7 +292,7 @@
                 <h4 class="h4 service-item-title">Mobile apps</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Creating applications for iOS and Android at a junior professional level.
                 </p>
               </div>
 
@@ -290,10 +305,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">ART</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                   2D and 3D art , photography , crochet and embrodery.
                 </p>
               </div>
 
@@ -302,221 +317,89 @@
           </ul>
 
         </section>
+      </section>
+      <section class="skill">
 
+        <h3 class="h3 skills-title">My skills</h3>
 
-        <!--
-          - testimonials
-        -->
+        <ul class="skills-list content-card">
 
-        <section class="testimonials">
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Front end</h5>
+              <data value="80">80%</data>
+              <a href="#" class="toggle-tech-stack" data-target="front-end-stack">Tech Stack</a>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill"></div>
+            </div>
+            <div class="tech-stack-content" id="front-end-stack">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Tailwind CSS</li>
+                <li>Three.js</li>
+              </ul>
+            </div>
+          </li>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <li class="skills-item">
 
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            <div class="title-wrapper">
+              <h5 class="h5">Backend</h5>
+              <data value="60">60%</data>
             </div>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
             </div>
 
-          </section>
+          </li>
 
-        </div>
+          <li class="skills-item">
 
+            <div class="title-wrapper">
+              <h5 class="h5">Mobile Developmen </h5>
+              <data value="70">70%</data>
+            </div>
 
-        <!--
-          - clients
-        -->
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
 
-        <section class="clients">
+          </li>
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <li class="skills-item">
 
-          <ul class="clients-list has-scrollbar">
+            <div class="title-wrapper">
+              <h5 class="h5">Design</h5>
+              <data value="70">70%</data>
+            </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+          </li>
+          <li class="skills-item">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+            <div class="title-wrapper">
+              <h5 class="h5">Project Managment </h5>
+              <data value="50">50%</data>
+            </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
+          </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
+        </ul>
 
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+      </section>
 
         <section class="timeline">
 
@@ -532,43 +415,35 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Higher National School of Computer science -Algiers-</h4>
 
-              <span>2007 — 2008</span>
+              <span>2021 — 2026</span>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
+              
+              <p class="timeline-text">Pursuing a Double Degree Programme in Engineering and Master of Computer Science. </p>
+              <br>
+              <p class="timeline-text">Key Courses:Operational Research, Problem Solving, Calculus, Algebra, Statistics and probabilities, Advanced Database administration, Numerical analysis for Data Science, OOP, C, Java, Software Engineering</p>
+              
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">High School HAMZA IBN ABD EL-MOTALIB</h4>
 
-              <span>2002 — 2004</span>
+              <span>2018 — 2021</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Grade: 4.0/4.0 GPA 18,32 Excellent.
               </p>
-
+              <br>
+              <p class="timeline-text">
+              I ranked the first at my School and in the Scientific branche in my Region.
+              </p>
+              <p class="timeline-text">
+                Key Courses: Science -mainly Biology- ,mathematics, Quadratics, Calculus, geometry, probabilities, 
+                Physics, Mechanics, chemistry 
+              </p>
             </li>
 
           </ol>
@@ -589,111 +464,38 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Freelance Web Developer</h4>
 
-              <span>2015 — Present</span>
+              <span>2023 — Present</span>
 
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
+                <p class="timeline-text">Recruited by Digital Plume (Writing and Translation StartUp Agency, China)</p>
+                <br>
+                <p class="timeline-text">Leading the layout and design of the company website using Tailwind CSS for frontend styling and React for interactive components. Developing backend functionalities with Flask to support website operations.</p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+              
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Designer</h4>
 
-              <span>2010 — 2013</span>
+              <span>2022-2023</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Recruited by Catalyst Learning (based in ain defla)
+              </p>
+              <p class="timeline-text">
+                Design engaging posts and posters for social media marketing campaigns,
+              </p>
+              <p class="timeline-text">
+                Manage and curate content for Facebook and Instagram accounts.
               </p>
 
             </li>
 
           </ol>
 
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
