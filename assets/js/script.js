@@ -57,22 +57,51 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 }
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Fetch the form data
+      const formData = new FormData(form);
+
+      // Send form data to the server
+      fetch('https://example.com/submit-form', {
+          method: 'POST',
+          body: formData,
+          headers: {
+              'Accept': 'application/json'
+          }
+      })
+      .then(response => {
+          if (response.ok) {
+              // Display success message or redirect to a thank-you page
+              alert('Message sent successfully!');
+              form.reset(); // Clear form inputs
+          } else {
+              throw new Error('Failed to send message');
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert('Failed to send message. Please try again later.');
+      });
   });
-}
+
+  // Enable form submission button when form is valid
+  form.addEventListener('input', function() {
+      const isValid = form.checkValidity();
+      const submitBtn = form.querySelector('[data-form-btn]');
+
+      if (isValid) {
+          submitBtn.removeAttribute('disabled');
+      } else {
+          submitBtn.setAttribute('disabled', '');
+      }
+  });
+});
+
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -92,7 +121,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
   });
-
 
 
 }
